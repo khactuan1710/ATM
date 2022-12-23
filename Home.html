@@ -1,12 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyen Manh Linh</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./NguyenVietTrung_2019603066_cau1.css">
+    <title>nmlinh</title>
 </head>
+
 <body>
-    <h3>Màn hình trang chủ</h3>
+
+    <header class="header">
+        <div class="container">
+            <img src="./assets/img/loading.gif" alt="" class="header--logo">
+
+            <div class="header__search">
+                <select name="search-choose" id="search-choose" class="header__search--select">
+                    <option value="Categories">All Categories</option>
+                    <option value="Categories2">Categories2</option>
+                    <option value="Categories3">Categories3</option>
+                    <option value="Categories4">Categories4</option>
+                    <option value="Categories5">Categories5</option>
+                </select>
+                <input type="text" class="header__search--input" placeholder="Search For Pruct">
+                <button type="submit" class="header__search--btn"><i class="fas fa-search header__search--icon"></i>
+                    Search</button>
+            </div>
+
+            <a href="#" class="header__cart">Cart <i class="fa fa-cart-arrow-down"></i></a>
+
+            <a href="#" class="header__info"><i class="fa fa-user-circle"></i></a>
+        </div>
+
+    </header>
+
+        <style>
+           
+        :root {
+                        --text-color: #333;
+                        --back-color: #000;
+                        --while-color: #fff;
+                        --blue-color: #336699;
+                        --menu-bgcolor: #000;
+                        --menu-color: #fff;
+                        --menu-hover-bgcolor: #FF3399;
+                        --menu-hover-color: #336699;
+                        /* boder */
+                        --border-color: rgba(0, 0, 0, 0.1);
+                    }
+
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+
+                    body {
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+
+                    .container {
+                        max-width: 1200px;
+                        margin: auto;
+                }
+
+                li {
+                    list-style: none;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: var(--text-color);
+                }
+
+                img {
+                    width: 100%;
+                }
+
+                /* Header */
+                .header {
+                    padding: 10px 20px;
+                    background: var(--blue-color);
+                }
+
+                .header .container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .header--logo {
+                    height: 50px;
+                    width: 50px;
+                }
+
+                .header__search {
+                    margin: 8px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    background: var(--while-color);
+
+                }
+
+                .header__search--input,
+                .header__search--select {
+                    outline: none;
+                    border: none;
+                    font-size: 1.2rem;
+                    padding: 8px;
+                }
+
+                .header__search--select {}
+
+                .header__search--btn {
+                    outline: none;
+                    border: none;
+                    background: var(--back-color);
+                    color: var(--while-color);
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    cursor: pointer;
+                }
+
+                .header__search--icon {
+                    padding: 12px;
+                    font-size: 1.2rem;
+                    background: var(--yellow-color);
+                }
+
+                .header__cart {
+                    color: var(--while-color);
+                    font-size: 20px;
+                    border-left: 1px solid #fff;
+                    border-right: 1px solid #fff;
+                    padding: 20px 32px;
+                    height: 100%;
+                }
+
+                .header__cart i {
+                    padding-left: 8px;
+                    font-size: 28px;
+                }
+
+                .header__info {
+                    color: var(--while-color);
+                    font-size: 20px;
+                    padding: 20px 50px;
+                    height: 100%;
+                }
+
+                .header__info i {
+                    padding-left: 8px;
+                    font-size: 42px;
+                }
+
+                .main {
+                    display: flex;
+                }
+
+                /* Menu */
+                /* Menu  */
+                .menu {
+                    width: 200px;
+                    margin: 8px;
+                    border: 1px solid var(--blue-color);
+                }
+
+                .item {
+                    position: relative;
+                }
+
+                .item-title .item--link {
+                    background: var(--blue-color) !important;
+                    color: var(--while-color) !important;
+                }
+
+                .item--link {
+                    padding: 12px 8px;
+                    display: flex;
+                    justify-content: space-between;
+                    border: 1px solid var(--border-color);
+                }
+
+                .item--link:hover {
+                    color: var(--menu-hover-color);
+                }
+
+                .item--btn {
+                    width: 20px;
+                }
+            
+        </style>
+
 </body>
+
 </html>
